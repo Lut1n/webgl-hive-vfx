@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>WebGL Hive-VFX v0.1</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            html
+            {
+                overflow: hidden;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="./hive-vfx-style.css">
+    </head>
+
+    <body>
+        <p id="helpText">Tips: <br/>Left click to get larger tool.<br/>Right click to change vfx.</p>
+        <img id="imageID" src="./contents/bees-4845211_640.jpg">
+        <canvas id="canvasID"></canvas>
+        <div id="infoPanelID">
+            <div id="pickerColorID"></div>
+            <p id="pixelValueID"></p>
+            <p id="histogramID">
+                Histogram:
+                <div><div class="histo-head" id="histo-class1"></div><div class="histo-bar" id="histo-class-value1"></div></div>
+                <div><div class="histo-head" id="histo-class2"></div><div class="histo-bar" id="histo-class-value2"></div></div>
+                <div><div class="histo-head" id="histo-class3"></div><div class="histo-bar" id="histo-class-value3"></div></div>
+                <div><div class="histo-head" id="histo-class4"></div><div class="histo-bar" id="histo-class-value4"></div></div>
+                <div><div class="histo-head" id="histo-class5"></div><div class="histo-bar" id="histo-class-value5"></div></div>
+                <div><div class="histo-head" id="histo-class6"></div><div class="histo-bar" id="histo-class-value6"></div></div>
+                <div><div class="histo-head" id="histo-class7"></div><div class="histo-bar" id="histo-class-value7"></div></div>
+                <div><div class="histo-head" id="histo-class8"></div><div class="histo-bar" id="histo-class-value8"></div></div>
+            </p>
+        </div>
+        <div id="mouseSurfaceID"></div> 
+    </body>
+    <script src="./scripts/third-party/gl-matrix-min.js"></script>
+    <script type="module" src="./scripts/hive-vfx.js"></script>
+</html>
